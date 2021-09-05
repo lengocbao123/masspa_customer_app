@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:masspa_customer_app/routes/app_pages.dart';
 import 'package:masspa_customer_app/utils/constants.dart';
+import 'package:get/get.dart';
 
 class HomeAppBarWidget extends StatelessWidget {
   @override
@@ -8,12 +10,17 @@ class HomeAppBarWidget extends StatelessWidget {
     return AppBar(
       title: Row(
         children: [
-          ClipOval(
-            child: SvgPicture.asset(
-              "assets/images/primary_logo.svg",
-              fit: BoxFit.fill,
-              width: 48,
-              height: 48,
+          InkWell(
+            onTap: () {
+              Get.toNamed(AppPages.PROFILE);
+            },
+            child: ClipOval(
+              child: Image.asset(
+                "assets/images/avatar.jpg",
+                fit: BoxFit.fill,
+                width: 48,
+                height: 48,
+              ),
             ),
           ),
           SizedBox(
@@ -21,7 +28,10 @@ class HomeAppBarWidget extends StatelessWidget {
           ),
           Text(
             "Linda Boyld",
-            style: TextStyle(color: Colors.black, fontSize: textSizeMedium),
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: textSizeLarge,
+                fontWeight: FontWeight.w500),
           )
         ],
       ),

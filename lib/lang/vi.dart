@@ -16,11 +16,11 @@ vi() {
     'forgot_pass': 'Quên mật khẩu',
     'country_code': "Mã QG",
     'left_welcome': 'Welcome ',
-    'left_profile': 'Profile',
+    'profile': 'Thông tin cá nhân',
     'left_noti': 'Notifications',
     'left_reports': 'Reports',
-    'left_settings': 'Settings',
-    'left_signout': 'Sign out',
+    'settings': 'Settings',
+    'signout': 'Đăng xuất',
     'left_share': 'Share',
     'left_help': 'Help',
     'required_validation': 'Thông tin bắt buộc',
@@ -31,10 +31,22 @@ vi() {
     'enter_verify_code':
         'Vui lòng nhập mã xác thực vừa gửi đến điện thoại của bạn',
     'send': 'Gửi',
-    'tracking_time':'Thời gian theo dõi',
-    'view_booking':'Xem lịch đặt chỗ',
-    'working_list':'Danh sách công việc',
-    'finish':'Hoàn thành'
+    'tracking_time': 'Thời gian theo dõi',
+    'view_booking': 'Xem lịch đặt chỗ',
+    'working_list': 'Danh sách công việc',
+    'finish': 'Hoàn thành',
+    'account_detail': 'Chi tiết tài khoản',
+    'information': 'Thông tin',
+    'working_time': 'Thời gian làm việc',
+    'salary': 'Lương',
+    'change_password': ' Đổi mật khẩu',
+    'fist_name':'Họ',
+    'last_name':'Tên',
+    'phone_number':'Số điện thoại',
+    'email':'Email',
+    'address':'Địa chỉ',
+    'gender':'Giới tính',
+    'save':'Lưu'
     /* end  */
   };
 }

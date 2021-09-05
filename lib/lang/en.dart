@@ -16,11 +16,11 @@ english() {
     'forgot_pass': 'Forgot password',
     'country_code': "Country code",
     'left_welcome': 'Welcome ',
-    'left_profile': 'Profile',
+    'profile': 'Profile',
     'left_noti': 'Notifications',
     'left_reports': 'Reports',
     'left_settings': 'Settings',
-    'left_signout': 'Sign out',
+    'signout': 'Signout',
     'left_share': 'Share',
     'left_help': 'Help',
     'required_validation': 'Required Information',
@@ -34,7 +34,19 @@ english() {
     'tracking_time': 'Tracking time',
     'view_booking': 'View booking',
     'working_list': 'Working list',
-    'finish': 'Finish'
+    'finish': 'Finish',
+    'account_detail': 'Account Detail',
+    'information': 'Information',
+    'working_time': 'Working time',
+    'salary': 'salary',
+    'change_password': 'Change_password',
+    'fist_name': 'Fist name',
+    'last_name': 'Last name',
+    'phone_number': 'Phone number',
+    'email': 'Email',
+    'address': 'Address',
+    'gender': 'Gender',
+    'save': 'Save'
     /* end  */
   };
 }

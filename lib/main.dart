@@ -30,7 +30,7 @@ void main() async {
     GetMaterialApp(
       title: "Application",
       debugShowCheckedModeBanner: false,
-      initialRoute: AppPages.HOME,
+      initialRoute: AppPages.LOGIN,
       theme: ThemeData(fontFamily: 'Roboto'),
       translations: Lang(),
       locale: Locale('vi', 'VN'),

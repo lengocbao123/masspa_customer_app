@@ -1,5 +1,7 @@
 import 'package:masspa_customer_app/pages/active_code/active_code_view.dart';
 import 'package:masspa_customer_app/pages/forgot_password/forgot_password_view.dart';
+import 'package:masspa_customer_app/pages/profile/information/information_view.dart';
+import 'package:masspa_customer_app/pages/profile/profile_view.dart';
 import 'package:masspa_customer_app/pages/register/register_view.dart';
 import 'package:masspa_customer_app/pages/reset_password/reset_password_view.dart';
 import 'package:masspa_customer_app/pages/welcome/welcome_view.dart';
@@ -18,6 +20,9 @@ class AppPages {
   static const FORGOT_PASSWORD = Routes.FORGOT_PASSWORD;
   static const ACTIVE_CODE = Routes.ACTIVE_CODE;
   static const RESET_PASSWORD = Routes.RESET_PASSWORD;
+  static const PROFILE = Routes.PROFILE;
+  static const PROFILE_INFORMATION = Routes.PROFILE_INFORMATION;
+
   static final routes = [
     GetPage(
       name: Routes.WELCOME,
@@ -46,6 +51,14 @@ class AppPages {
     GetPage(
       name: Routes.RESET_PASSWORD,
       page: () => ResetPasswordView(),
+    ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => ProfileView(),
+    ),
+    GetPage(
+      name: Routes.PROFILE_INFORMATION,
+      page: () => ProfileInformationView(),
     )
   ];
 }
