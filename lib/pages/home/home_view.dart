@@ -1,33 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:masspa_customer_app/navi/bottom_navi.dart';
 import 'package:masspa_customer_app/navi/left_navi.dart';
-import 'package:masspa_customer_app/navi/navi_controller.dart';
-import 'package:masspa_customer_app/pages/home/home_widget.dart';
-import 'package:masspa_customer_app/pages/home/settings_widget.dart';
-import 'package:masspa_customer_app/pages/home/test_widget.dart';
-import 'package:masspa_customer_app/pages/login/login_controller.dart';
-
+import 'package:masspa_customer_app/pages/home/toggle_screen_widget.dart';
+import 'package:masspa_customer_app/pages/home/working/working_list_widget.dart';
+import 'app_bar_widget.dart';
 import 'home_controller.dart';
 
 class HomeView extends StatelessWidget {
   final HomeController homeController = Get.put(HomeController());
-  final NaviController naviController = Get.put(NaviController());
-  final LoginController loginController = Get.put(LoginController());
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> _widgetList = <Widget>[
-      homeWidget(),
-      testWidget(),
-      settingsWidget()
-    ];
     return Scaffold(
-      appBar: AppBar(title: Text('home')),
+      appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(60), child: HomeAppBarWidget()),
       drawer: leftNavi("User"),
-      bottomNavigationBar: bottomNavi(naviController),
-      body:
-          Obx(() => _widgetList.elementAt(naviController.selectedIndex.value)),
+      body: SingleChildScrollView(
+        primary: false,
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: 32, horizontal: 24),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              HomeToggleScreenWidget(),
+              SizedBox(
+                height: 48,
+              ),
+              HomeWorkingList()
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

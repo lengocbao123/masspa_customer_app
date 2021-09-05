@@ -30,7 +30,11 @@ english() {
     'back_to_login': 'Back to login',
     'enter_verify_code':
         'Please enter the verification code the we\'ve sent to your phone',
-    'send': 'Send'
+    'send': 'Send',
+    'tracking_time': 'Tracking time',
+    'view_booking': 'View booking',
+    'working_list': 'Working list',
+    'finish': 'Finish'
     /* end  */
   };
 }

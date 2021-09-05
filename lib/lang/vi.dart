@@ -30,7 +30,11 @@ vi() {
     'back_to_login': 'Quay lại đăng nhập',
     'enter_verify_code':
         'Vui lòng nhập mã xác thực vừa gửi đến điện thoại của bạn',
-    'send': 'Gửi'
+    'send': 'Gửi',
+    'tracking_time':'Thời gian theo dõi',
+    'view_booking':'Xem lịch đặt chỗ',
+    'working_list':'Danh sách công việc',
+    'finish':'Hoàn thành'
     /* end  */
   };
 }
